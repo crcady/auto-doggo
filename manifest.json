@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Auto Doggo",
+    "version": "1.0",
+    "description": "Automatically take you through the CAC login process when you hit https://webmail.apps.mil",
+
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": [
+                "https://login.microsoftonline.us/*",
+                "https://sts1.auth.ecuf.deas.mil/*"
+            ]
+        }
+    ]
+}
